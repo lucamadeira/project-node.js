@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceder - Tienda Profesional</title>
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+        <form id="loginForm" action="/login" method="POST">
+      <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+      <input type="password" name="password" id="password" placeholder="Contraseña" required>
+      <button type="submit">Acceder</button>
+      <p class="mensaje-error" id="errorMsg">
+        <!-- Mensaje de error se puede mostrar usando JS -->
+        </p>
+  </form>
+      <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+    </div>
+  </div>
+
+  <script src="./js/login.js"></script>
+</body>
+</html>
