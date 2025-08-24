@@ -3,29 +3,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* ======= Body y fondo ======= */
 body {
-  background-image: url('../img/dolcebkr.jpg');
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
-  color:#ffffff;
+  background: linear-gradient(to bottom, #f0f2f5, #ffffff);
+  color: #333333;
   line-height: 1.6;
-  font-size: 20px;
-
+  font-size: 18px;
 }
 
 /* ======= Header ======= */
 header {
-  background: #ff5722;
-  color: white;
+  background: #1e1e2f;
+  color: #ffffff;
   padding: 15px 10%;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 header .container-header {
   display: flex;
@@ -33,14 +30,14 @@ header .container-header {
   align-items: center;
 }
 header nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   margin-left: 20px;
-  font-weight: 600;
+  font-weight: 500;
   transition: color 0.3s;
 }
 header nav a:hover {
-  color: #ffd54f;
+  color: #00bfa6;
 }
 .logo {
   height: 50px;
@@ -55,10 +52,11 @@ section {
 .hero {
   text-align: center;
   padding: 100px 10%;
-  background: linear-gradient(to right, #ff9800, #ff5722);
-  color: white;
+  background: linear-gradient(135deg, #00bfa6, #1e1e2f);
+  color: #ffffff;
   border-radius: 15px;
   margin-bottom: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 .hero h1 {
   font-size: 3em;
@@ -72,24 +70,23 @@ section {
 .hero button {
   padding: 15px 30px;
   font-size: 1em;
-  background: white;
-  color: #ff5722;
+  background: #00bfa6;
+  color: #ffffff;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s;
 }
 .hero button:hover {
-  background: #ffd54f;
-  color: #ff5722;
-  transform: scale(1.1);
+  background: #009e8f;
+  transform: scale(1.05);
 }
 
 /* ======= Productos ======= */
 .productos-page h1 {
   font-size: 2.8em;
   margin-bottom: 40px;
-  color: #ff5722;
+  color: #1e1e2f;
   text-align: center;
 }
 .productos-grid {
@@ -99,41 +96,55 @@ section {
   gap: 25px;
 }
 .producto {
-  background: white;
+  background: #ffffff;
   width: 250px;
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   opacity: 0;
   transform: translateY(50px);
 }
 .producto:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
 }
-.producto img { width: 100%; border-radius: 15px; }
-.producto h3 { margin: 15px 0 10px; color: #ff9800; }
-.producto p { font-size: 1em; margin-bottom: 15px; }
+.producto img {
+  width: 100%;
+  border-radius: 15px;
+}
+.producto h3 {
+  margin: 15px 0 10px;
+  color: #00bfa6;
+}
+.producto p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #555555;
+}
 .producto button {
   padding: 10px 20px;
   border: none;
-  background: #ff5722;
-  color: white;
+  background: #1e1e2f;
+  color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
 .producto button:hover {
-  background: #ffd54f;
-  color: #ff5722;
+  background: #00bfa6;
+  color: #ffffff;
 }
-.producto.mostrar { opacity: 1; transform: translateY(0); transition: all 0.6s ease-out; }
+.producto.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease-out;
+}
 
 /* ======= Carrito ======= */
 .carrito-page h1 {
   font-size: 2.5em;
-  color: #ff5722;
+  color: #1e1e2f;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -148,7 +159,7 @@ section {
   text-align: center;
 }
 .carrito-table th {
-  background: #ff5722;
+  background: #00bfa6;
   color: white;
 }
 .carrito-table input {
@@ -157,9 +168,8 @@ section {
   text-align: center;
 }
 
-.footercarrito{
-
-  background: #5d2828;
+.footercarrito {
+  background: #1e1e2f;
   color: white;
   padding: 25px 10%;
   text-align: center;
@@ -170,7 +180,7 @@ section {
 .sobre-page h1 {
   text-align: center;
   font-size: 2.8em;
-  color: #5d2828;
+  color: #1e1e2f;
   margin-bottom: 40px;
 }
 .sobre-content {
@@ -183,15 +193,16 @@ section {
 .sobre-content img {
   width: 600px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   animation: fadeIn 1.2s ease;
 }
 .sobre-content p {
   max-width: 500px;
   font-size: 1.1em;
+  color: #555555;
 }
-.footersobre{
-  background: #5d2828;
+.footersobre {
+  background: #1e1e2f;
   color: white;
   padding: 25px 10%;
   text-align: center;
@@ -202,7 +213,7 @@ section {
 .contacto-page h1 {
   text-align: center;
   font-size: 2.8em;
-  color: #ff5722;
+  color: #1e1e2f;
   margin-bottom: 40px;
 }
 .contacto-page form {
@@ -215,12 +226,12 @@ section {
 .contacto-page input, .contacto-page textarea {
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   font-size: 1em;
 }
 .contacto-page button {
   padding: 15px;
-  background: #ff5722;
+  background: #00bfa6;
   color: white;
   border: none;
   border-radius: 30px;
@@ -229,21 +240,12 @@ section {
   transition: 0.3s;
 }
 .contacto-page button:hover {
-  background: #ffd54f;
-  color: #ff5722;
-}
-
-.footercontacto{
-  background: #5d2828;
-  color: white;
-  padding: 25px 10%;
-  text-align: center;
-  margin-top: 380px;
+  background: #009e8f;
 }
 
 /* ======= Footer ======= */
 footer {
-  background: #5d2828;
+  background: #1e1e2f;
   color: white;
   padding: 25px 10%;
   text-align: center;
@@ -258,4 +260,3 @@ footer {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-

@@ -1,9 +1,10 @@
 import { Router } from "express";
 const router = Router();
 
-router.get('/', (req, res) => {
-  res.render('home.ejs');
+ router.get('/', (req, res) => {
+   res.render('home.ejs');
 });
+
 
 router.get('/login', (req, res) => {
   res.render('login.ejs', { error: req.query.error });

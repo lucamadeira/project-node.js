@@ -1,0 +1,29 @@
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/">
+      <img src="/img/logo.svg" alt="Logo Chocolate Experience" />
+      <span>Chocolate Experience</span>
+    </a>
+    <nav aria-label="Primária">
+      <ul>
+        <li><a href="#tour">O Tour</a></li>
+        <li><a href="#experiences">Experiências</a></li>
+        <li><a href="#timeline">História</a></li>
+        <li><a href="#visit">Visite</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="#tickets">Comprar ingressos</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+<script>
+  // Mobile menu simples
+  const toggle = document.currentScript.previousElementSibling.querySelector(".menu-toggle");
+  const nav = document.currentScript.previousElementSibling.querySelector("nav ul");
+  toggle.addEventListener("click", ()=>{
+    const open = toggle.getAttribute("aria-expanded")==="true";
+    toggle.setAttribute("aria-expanded", !open);
+    nav.classList.toggle("open", !open);
+  });
+</script>

@@ -79,3 +79,4 @@ form.addEventListener('submit', function(e){
     errorMsg.textContent = 'Correo o contraseña incorrectos.';
   }
 });
+
