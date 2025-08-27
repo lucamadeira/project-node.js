@@ -50,6 +50,7 @@ a {
   font-weight: bold;
 }
 
+
 /* ======= Hero ======= */
 .hero {
   position: relative;
@@ -134,8 +135,12 @@ a {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
+.img-container{
+  width: 400px;
+}
+
 
 .galeria-img {
   width: 300px;
